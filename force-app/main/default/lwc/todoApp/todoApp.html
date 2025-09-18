@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="To-Do Manager">
+        <div class="slds-p-around_medium">
+            <lightning-input 
+                label="New Task" 
+                value={todoName} 
+                onchange={handleInputChange}>
+            </lightning-input>
+            
+            <lightning-button 
+                label="Add To-Do" 
+                onclick={addTodo} 
+                class="slds-m-top_small">
+            </lightning-button>
+
+            <template if:true={todos.length}>
+                <ul class="slds-m-top_medium">
+                    <template for:each={todos} for:item="todo">
+                        <li key={todo.id} class="slds-m-bottom_x-small">
+                            {todo.name}
+                            <lightning-button 
+                                label="Delete" 
+                                variant="destructive" 
+                                onclick={deleteTodo} 
+                                data-id={todo.id} 
+                                class="slds-m-left_small">
+                            </lightning-button>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+
+            <template if:false={todos.length}>
+                <p class="slds-m-top_medium">No tasks yet.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

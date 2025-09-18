@@ -1,30 +1,18 @@
-# To-Do Manager App 📝  
+# Salesforce DX Project: Next Steps
 
-A simple **Lightning Web Component (LWC)** project for managing tasks. This app demonstrates **frontend-only functionality** with **add** and **delete** features, focusing on **LWC reactivity** using `@track`. No Apex classes or org configuration required.  
+Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
----
+## How Do You Plan to Deploy Your Changes?
 
-## 🚀 Features  
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-- ➕ **Add Tasks**  
-  - Enter and add new tasks dynamically.  
+## Configure Your Salesforce DX Project
 
-- ❌ **Delete Tasks**  
-  - Remove tasks instantly with a single click.  
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-- ⚡ **Reactivity with @track**  
-  - Task list automatically updates when items are added or removed.  
+## Read All About It
 
-- 🎯 **Frontend Only**  
-  - No Apex or backend logic required.  
-  - Fully handled in **JavaScript + LWC**.  
-
----
-
-## 🛠️ Tech Stack  
-
-- **Lightning Web Components (LWC)**  
-- **JavaScript reactivity (`@track`)**  
-- **SLDS (Salesforce Lightning Design System)**  
-
----
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
